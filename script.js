@@ -1,13 +1,13 @@
-// Your API key
+
 const apiKey = "9521402d676840c796f190640250904";
 
-// Get references to the DOM elements
+
 const cityInput = document.getElementById('city-input');
 const getWeatherBtn = document.getElementById('get-weather-btn');
 const weatherInfo = document.getElementById('weather-info');
 const errorDiv = document.getElementById('error');
 
-// Function to fetch weather data from the API
+
 async function getWeather(city) {
     const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
@@ -52,7 +52,7 @@ getWeatherBtn.addEventListener('click', () => {
     }
 });
 
-// Optional: Add the same functionality when the user presses Enter in the input field
+
 cityInput.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         getWeatherBtn.click();
