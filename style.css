@@ -1,0 +1,93 @@
+/* General reset and body styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-15px);
+}
+
+h1 {
+    font-size: 3em;
+    color: #0072ff;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.city-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid #0072ff;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    outline: none;
+    background-color: #f4f7fb;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.city-input:focus {
+    border-color: #00c6ff;
+    background-color: #e8f4ff;
+}
+
+.btn {
+    padding: 12px 35px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #00c6ff;
+    transform: translateY(-5px);
+}
+
+.weather-info {
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.weather-info p {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: #f44336;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
